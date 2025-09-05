@@ -9,22 +9,28 @@ import user_4 from "../../assets/images/user-4.png";
 import { useRef } from "react";
 const Testimonials = () => {
 
-//========================script
+  //========================script
 
-const slider =useRef();
-let tx =0;
-const slideForward =()=>{
-  
-}
-const slideBackward =()=>{
-  
-}
+  const slider = useRef();
+  let tx = 0;
+  const slideForward = () => {
+if(tx > -50){
+  tx -=25;
 
+}slider.current.style.transform = `translate(${tx}%)`;
+  }
+  const slideBackward = () => {
+if(tx < 0){
+  tx +=25;
+
+}
+slider.current.style.transform = `translate(${tx}%)`;
+  }
 
   return (
     <div className="testimonials">
-      <img src={next_icon} alt="" className="next-btn" onClick={slideForward}/>
-      <img src={back_icon} alt="" className="back-btn" onClick={slideBackward}/>
+      <img src={next_icon} alt="" className="next-btn" onClick={slideForward} />
+      <img src={back_icon} alt="" className="back-btn" onClick={slideBackward} />
       <div className="slider">
         <ul ref={slider}>
           <li>
@@ -35,14 +41,14 @@ const slideBackward =()=>{
                   <h3>kailash saklani</h3>
                   <span>Edusity , USA</span>
                 </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  molestiae id aspernatur fugiat. Assumenda ea, ad quis iure est
-                  similique omnis deleniti accusamus iusto dolorum harum enim
-                  voluptatibus, eligendi veritatis.
-                </p>
-              
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                molestiae id aspernatur fugiat. Assumenda ea, ad quis iure est
+                similique omnis deleniti accusamus iusto dolorum harum enim
+                voluptatibus, eligendi veritatis.
+              </p>
+
             </div>
           </li>
           <li>
@@ -53,14 +59,14 @@ const slideBackward =()=>{
                   <h3>kailash saklani</h3>
                   <span>Edusity , USA</span>
                 </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  molestiae id aspernatur fugiat. Assumenda ea, ad quis iure est
-                  similique omnis deleniti accusamus iusto dolorum harum enim
-                  voluptatibus, eligendi veritatis.
-                </p>
-              
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                molestiae id aspernatur fugiat. Assumenda ea, ad quis iure est
+                similique omnis deleniti accusamus iusto dolorum harum enim
+                voluptatibus, eligendi veritatis.
+              </p>
+
             </div>
           </li>
           <li>
@@ -71,14 +77,14 @@ const slideBackward =()=>{
                   <h3>kailash saklani</h3>
                   <span>Edusity , USA</span>
                 </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  molestiae id aspernatur fugiat. Assumenda ea, ad quis iure est
-                  similique omnis deleniti accusamus iusto dolorum harum enim
-                  voluptatibus, eligendi veritatis.
-                </p>
-              
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                molestiae id aspernatur fugiat. Assumenda ea, ad quis iure est
+                similique omnis deleniti accusamus iusto dolorum harum enim
+                voluptatibus, eligendi veritatis.
+              </p>
+
             </div>
           </li>
           <li>
@@ -89,14 +95,14 @@ const slideBackward =()=>{
                   <h3>kailash saklani</h3>
                   <span>Edusity , USA</span>
                 </div>
-                </div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                  molestiae id aspernatur fugiat. Assumenda ea, ad quis iure est
-                  similique omnis deleniti accusamus iusto dolorum harum enim
-                  voluptatibus, eligendi veritatis.
-                </p>
-              
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                molestiae id aspernatur fugiat. Assumenda ea, ad quis iure est
+                similique omnis deleniti accusamus iusto dolorum harum enim
+                voluptatibus, eligendi veritatis.
+              </p>
+
             </div>
           </li>
         </ul>
