@@ -13,3 +13,16 @@
     width: 23%;
     border-radius: 10px;
 }
+
+/* MEDIA QUERY */
+
+@media (max-width: 650px) {
+    .Gallery{
+        flex-direction: column;
+    }
+    .Gallery img{
+        width: 48%;
+        margin-bottom: 25px ;
+    }
+    
+}
